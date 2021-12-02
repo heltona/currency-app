@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+use App\Http\Controllers\CurrencyBuyerController;
+
 Route::get('/', function () {
     return view('welcome');
 });
