@@ -1,0 +1,12 @@
+<?php
+namespace App\Models\ConversionServices;
+
+use App\Models\Money;
+
+class ConversionRateDownLimit implements ConversionRateStrategy
+{
+    public function calculateRate(Money $amount): Money
+    {
+        return new Money($amount->getCurrency(), $amount->getAmount() * 0.02);
+    }
+}
