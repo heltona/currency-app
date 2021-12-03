@@ -1,0 +1,59 @@
+body {
+	font-family: arial, sans-serif;
+}
+
+h1 {
+	color: slateblue;
+	margin-bottom: 45px;
+}
+
+form > div {
+	margin-bottom: 20px;
+}
+
+form > div:last-of-type {
+    text-align: center;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+select,  input {
+	width: 100%;	
+}
+
+button {
+	padding: 5px 20px;
+	margin-top: 20px;
+}
+
+header, footer, main {
+	width: 450px;
+	margin: auto;
+}
+
+
+p > b {
+	font-weight: bold;
+	color: #071331
+}
+
+footer {
+	padding: 80px;
+}
+footer a {
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+#errors li {
+	list-style-type:none;
+	color: #ff0000;
+}

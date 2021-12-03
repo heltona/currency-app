@@ -13,6 +13,13 @@ class CurrencyBuyerController
     //@todo too much code; refactor it
     public function buyCurrency(Request $req)
     {
+        
+        $req->validate([
+            'payment-means' => 'required',
+            'target-currency' => 'required',
+            'amount' => 'required|numeric|min:1000|max:1000'
+        ]);
+        
         $origin = new Money('BRL', $req->get("amount"));
         $target = new Money($req->get("target-currency"), 0);
         $payment = new PaymentMeans($req->get("payment-means"));

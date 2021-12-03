@@ -24,8 +24,5 @@ Route::get('/buy-currency', function() {
    return view('buy-currency');
 });
 
-Route::post('/buy-currency', [CurrencyBuyerController::class, 'buyCurrency']);
+Route::post('/acquisition-result', [CurrencyBuyerController::class, 'buyCurrency']);
 
-Route::get('/acquisition-result', function(){
-   return view('acquisition-result');
-});
